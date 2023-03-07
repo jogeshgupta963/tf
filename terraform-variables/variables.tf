@@ -14,3 +14,7 @@ variable "map_content"{
 		"gupta"="jogesh"
 	}
 }
+variable "file_list"{
+        type = list
+         default = ["/home/ubuntu/terraform/terraform-variables/file1.txt","/home/ubuntu/terraform/terraform-variables/file2.txt"]
+}
