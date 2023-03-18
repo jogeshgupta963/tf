@@ -12,13 +12,7 @@ provider "aws" {
         region = "ap-south-1"
 }
 
-# resource "aws_instance" "ec2_instance"{
-#         ami = "ami-0f8ca728008ff5af4"
-#         instance_type = "t2.micro"
-#         tags = {
-#                 Name="tf-instance-1"
-#         }
-# }
+
 
 # resource "aws_s3_bucket" "s3_buket"{
 #         bucket = "tf-bucket-1232rkjmjofafjokaf"
@@ -129,4 +123,4 @@ resource "aws_route_table_association" "vpc_custom_public_2a" {
 resource "aws_route_table_association" "vpc_custom_public_3a" {
   subnet_id = aws_subnet.vpc-custom-publicSubnet-3.id
   route_table_id = aws_route_table.vpc_custom_public.id
-}
+} 
