@@ -119,14 +119,14 @@ resource "aws_route_table" "vpc_custom_public" {
 #route association public
 
 resource "aws_route_table_association" "vpc_custom_public_1a" {
-  subnet_id = aws_subnet.vpc-custom-publicSubnet-1
-  route_table_id = aws_route_table.vpc_custom_public
+  subnet_id = aws_subnet.vpc-custom-publicSubnet-1.id
+  route_table_id = aws_route_table.vpc_custom_public.id
 }
 resource "aws_route_table_association" "vpc_custom_public_2a" {
-  subnet_id = aws_subnet.vpc-custom-publicSubnet-2
-  route_table_id = aws_route_table.vpc_custom_public
+  subnet_id = aws_subnet.vpc-custom-publicSubnet-2.id
+  route_table_id = aws_route_table.vpc_custom_public.id
 }
 resource "aws_route_table_association" "vpc_custom_public_3a" {
-  subnet_id = aws_subnet.vpc-custom-publicSubnet-3
-  route_table_id = aws_route_table.vpc_custom_public
+  subnet_id = aws_subnet.vpc-custom-publicSubnet-3.id
+  route_table_id = aws_route_table.vpc_custom_public.id
 }
