@@ -34,7 +34,7 @@ resource "aws_vpc" "vpc_custom" {
         enable_dns_support = true
         enable_dns_hostnames = true
         enable_classiclink = false
-        tags {
+        tags ={
                 Name = "vpc_custom"
         }
 }
@@ -111,7 +111,7 @@ resource "aws_route_table" "vpc_custom_public" {
                 cidr_block = "0.0.0.0/0"
                 gateway_id = aws_internet_gateway.vpc_custom-gw.id
         } 
-        tags{
+        tags = {
                 Name = "vpc_custom_public_1"
         }
 }
